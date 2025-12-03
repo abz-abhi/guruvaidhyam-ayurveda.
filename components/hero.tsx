@@ -32,9 +32,9 @@ export default function Hero() {
         </div>
 
         <div className="flex justify-center lg:justify-end ">
-          <div className="w-full max-w-md lg:max-w-lg rotate-card overflow-hidden shadow-md">
+          <div className="w-full max-w-md lg:max-w-lg  overflow-hidden shadow-md">
             <img
-              src="/globe.svg"
+              src="/images/3d-delicious-food-tet-vietnamese-new-year.jpg"
               alt="hero"
               className="w-full h-auto object-cover"
             />

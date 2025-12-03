@@ -23,14 +23,14 @@ const ProductPage: React.FC = () => {
           </div>
 
           <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
-            <img src="/product-illustration-1.svg" alt="feature" className="w-64 md:w-80 lg:w-96 object-contain" />
+            <img src="/images/featre1.jpg" alt="feature" className="w-64 rounded-lg md:w-80 lg:w-96 object-contain" />
           </div>
         </section>
 
         {/* Feature Row 2: image left, text right */}
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="flex justify-center lg:justify-start">
-            <img src="/product-illustration-2.svg" alt="feature" className="w-64 md:w-80 lg:w-96 object-contain" />
+            <img src="/images/feature2.jpg" alt="feature" className="w-64 rounded-lg md:w-80 lg:w-96 object-contain" />
           </div>
 
           <div>
