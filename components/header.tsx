@@ -21,19 +21,19 @@ export default function Header() {
           </div>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex gap-8 text-gray-600">
-            <a className="hover:text-gray-900" href="#product">Product</a>
-            <a className="hover:text-gray-900" href="#features">Features</a>
-            <a className="hover:text-gray-900" href="#pricing">Pricing</a>
-            <a className="hover:text-gray-900" href="#about">About</a>
-            <a className="text-pink-500 font-semibold" href="#cta">Call to action</a>
+          <nav className="hidden md:flex gap-8 text-gray-600 items-center">
+            <a className="hover:text-gray-900 transition-colors duration-150" href="#product">Product</a>
+            <a className="hover:text-gray-900 transition-colors duration-150" href="#features">Features</a>
+            <a className="hover:text-gray-900 transition-colors duration-150" href="#pricing">Pricing</a>
+            <a className="hover:text-gray-900 transition-colors duration-150" href="#about">About</a>
+            <a className="text-pink-500 font-semibold hover:opacity-90 transition-opacity duration-150" href="#cta">Call to action</a>
           </nav>
 
           {/* Mobile Button */}
           <button
             onClick={() => setOpen(!open)}
             aria-label="menu"
-            className="md:hidden p-2"
+            className="md:hidden p-2 rounded-full hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-pink-200"
           >
             {open ? (
               /* X Icon */
@@ -51,12 +51,12 @@ export default function Header() {
 
         {/* Mobile Nav */}
         {open && (
-          <div className="md:hidden flex flex-col gap-4 pb-6 text-gray-700">
-            <a className="hover:text-gray-900" href="#product">Product</a>
-            <a className="hover:text-gray-900" href="#features">Features</a>
-            <a className="hover:text-gray-900" href="#pricing">Pricing</a>
-            <a className="hover:text-gray-900" href="#about">About</a>
-            <a className="text-pink-500 font-semibold" href="#cta">Call to action</a>
+          <div className="md:hidden flex flex-col gap-3 pb-6 text-gray-700 mt-4">
+            <a className="py-2 px-3 rounded hover:bg-gray-50 transition" href="#product">Product</a>
+            <a className="py-2 px-3 rounded hover:bg-gray-50 transition" href="#features">Features</a>
+            <a className="py-2 px-3 rounded hover:bg-gray-50 transition" href="#pricing">Pricing</a>
+            <a className="py-2 px-3 rounded hover:bg-gray-50 transition" href="#about">About</a>
+            <a className="py-2 px-3 rounded text-pink-500 font-semibold hover:bg-pink-50 transition" href="#cta">Call to action</a>
           </div>
         )}
       </div>
