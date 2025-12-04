@@ -7,29 +7,31 @@ export default function Hero() {
         {/* Left Text Section */}
         <div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight">
-            Use me as your
-            <span className="block text-pink-500">landing page.</span>
+            Pure Ayurvedic
+            <span className="block text-pink-500">Skincare You Can Trust.</span>
           </h1>
 
           <p className="mt-6 text-gray-600 max-w-xl text-lg">
-            A clean, focused landing page helps visitors understand your value
-            quickly. Use clear headings, a short descriptive paragraph, and a
-            prominent call to action to guide people toward the next step.
+            Handcrafted with ancient Ayurvedic wisdom, Guruvaidhyam offers
+            natural skincare solutions formulated by experts in lifestyle
+            disorders, spine–joint care & gynaecology. Experience safe,
+            chemical-free beauty crafted with a divine touch.
           </p>
 
           <div className="mt-8 flex items-center gap-6">
             <a
               id="cta"
               className="inline-block bg-pink-500 text-white px-6 py-3 rounded-lg shadow hover:shadow-lg transform hover:-translate-y-0.5 transition"
-              href="#"
+              href="#products"
             >
-              Get started
+              Shop Now
             </a>
             <a
               className="text-pink-500 font-medium hover:underline"
-              href="mailto:hello@example.com"
+              href="https://www.instagram.com/guruvaidhyam_ayurveda/"
+              target="_blank"
             >
-              Email us
+              Visit Instagram
             </a>
           </div>
         </div>
@@ -38,11 +40,11 @@ export default function Hero() {
         <div className="flex justify-center lg:justify-end">
           <div className="w-full max-w-md lg:max-w-lg overflow-hidden shadow-md rounded-xl">
             <Image
-              src="/images/3d-delicious-food-tet-vietnamese-new-year.jpg"
-              alt="hero"
+              src="/images/product-hero.jpg" // replace with your original image path
+              alt="Guruvaidhyam Ayurvedic Skincare Products"
               width={600}
               height={600}
-              className="w-full h-auto object-cover"
+              className="w-full h-auto object-cover rounded-lg"
               priority
             />
           </div>

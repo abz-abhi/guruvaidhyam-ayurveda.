@@ -1,59 +1,82 @@
+import Image from "next/image";
+
 export default function Footer() {
   return (
-    <footer className="w-full bg-white text-gray-800 py-12">
-      <div className="max-w-4xl mx-auto text-center">
-        {/* logo */}
+    <footer className="w-full bg-white text-gray-800 py-12 border-t border-gray-100">
+      <div className="max-w-6xl mx-auto text-center">
+        {/* Brand Logo */}
         <div className="mb-6">
-          <div style={{width: 44, height: 44, margin: '0 auto'}}>
-            {/* simple circular ornamental logo similar to screenshot */}
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="mx-auto">
-              <circle cx="12" cy="12" r="10" stroke="#f25666" strokeWidth="1.6" fill="transparent" />
-              <g stroke="#f25666" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M12 6v12M6 12h12M7.5 7.5l9 9M16.5 7.5l-9 9" />
-              </g>
-            </svg>
-          </div>
+          <Image
+            src="/logo/552272882_17844576087575966_6653134190890368995_n (1).jpg"
+            alt="GuruvAidhyam Ayurveda"
+            width={40}
+            height={40}
+            className="w-16 h-16 mx-auto rounded-full"
+            priority
+          />
         </div>
 
-        {/* nav links */}
-        <nav className="mb-6">
-          <ul className="flex justify-center gap-10 text-sm text-gray-600">
-            <li>Something</li>
-            <li>Something</li>
-            <li>Something</li>
-            <li>Something</li>
+        {/* About Text */}
+        <p className="max-w-2xl mx-auto text-gray-600 text-sm leading-relaxed mb-8">
+          GuruvAidhyam Ayurveda creates{" "}
+          <span className="text-pink-600 font-semibold">
+            handcrafted natural skincare
+          </span>
+          rooted in ancient Ayurvedic wisdom. Experts in{" "}
+          <span className="font-medium">
+            Lifestyle Disorders, Spine–Joint Care & Gynaecology
+          </span>
+          , we bring you pure, herbal beauty with a divine touch.
+        </p>
+
+        {/* Navigation */}
+        <nav className="mb-8">
+          <ul className="flex justify-center gap-10 text-sm text-gray-700">
+            <li className="hover:text-pink-500 cursor-pointer">Home</li>
+            <li className="hover:text-pink-500 cursor-pointer">Products</li>
+            <li className="hover:text-pink-500 cursor-pointer">About Us</li>
+            <li className="hover:text-pink-500 cursor-pointer">Contact</li>
           </ul>
         </nav>
 
-        {/* social icons */}
-        <div className="mb-6 flex justify-center gap-6">
-          {/* Github */}
-          <a aria-label="github" href="#" className="w-8 h-8 rounded-full bg-gray-900 flex items-center justify-center text-white">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 .5C5.73.5.75 5.48.75 11.74c0 4.9 3.18 9.06 7.59 10.52.56.1.76-.24.76-.54 0-.27-.01-1-.02-1.96-3.09.67-3.75-1.49-3.75-1.49-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 . ."/>
+        {/* Social Icons */}
+        <div className="flex justify-center gap-6 mb-8">
+          <a
+            href="#"
+            aria-label="Instagram"
+            className="w-10 h-10 rounded-full bg-gray-900 text-white flex items-center justify-center hover:opacity-80 transition"
+          >
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm13 5.5v9c0 1.9-1.6 3.5-3.5 3.5h-9C5.6 20 4 18.4 4 16.5v-9C4 5.6 5.6 4 7.5 4h9C18.4 4 20 5.6 20 7.5zM12 7a5 5 0 1 0 .001 10.001A5 5 0 0 0 12 7zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zm4.3-8.9a1.2 1.2 0 1 1 0-2.4 1.2 1.2 0 0 1 0 2.4z" />
             </svg>
           </a>
 
-          {/* LinkedIn */}
-          <a aria-label="linkedin" href="#" className="w-8 h-8 rounded-full bg-gray-900 flex items-center justify-center text-white">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4.98 3.5C4.98 4.88 3.88 6 2.49 6S0 4.88 0 3.5 1.1 1 2.49 1 4.98 2.12 4.98 3.5zM0 8h5v16H0zM8 8h4.8v2.2h.1c.67-1.2 2.3-2.2 4.7-2.2C22.8 8 24 10.2 24 14.3V24h-5v-8.6c0-2.1-.04-4.8-3-4.8-3 0-3.5 2.4-3.5 4.6V24H8V8z"/>
+          <a
+            href="#"
+            aria-label="WhatsApp"
+            className="w-10 h-10 rounded-full bg-gray-900 text-white flex items-center justify-center hover:opacity-80 transition"
+          >
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.3-1.5a10 10 0 1 0 4.7-18.5zM12 20a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm4.2-5.8c-.2-.1-1.3-.6-1.5-.6s-.3-.1-.5.2c-.2.3-.6.6-.7.8-.1.1-.3.1-.5 0s-1-.4-1.8-1.2c-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.3.2-.5.2-.2.3-.4.4-.6.1-.1 0-.3 0-.4l-.6-1.4c-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.8.3s-.8.8-.8 2c0 1.2.9 2.4 1 2.5.1.1 1.7 2.6 4.2 3.7.6.3 1.1.5 1.4.6.6.2 1.2.2 1.6.1.5-.1 1.3-.5 1.5-1 .2-.5.2-.9.1-1-.1-.1-.2-.1-.4-.2z" />
             </svg>
           </a>
 
-          {/* Twitter */}
-          <a aria-label="twitter" href="#" className="w-8 h-8 rounded-full bg-gray-900 flex items-center justify-center text-white">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.2 4.2 0 0 0 1.84-2.31 8.2 8.2 0 0 1-2.6 1 4.1 4.1 0 0 0-7 3.74A11.6 11.6 0 0 1 3.15 4.6a4.1 4.1 0 0 0 1.27 5.47c-.66 0-1.28-.2-1.82-.5v.05a4.1 4.1 0 0 0 3.28 4 4.2 4.2 0 0 1-1.83.07 4.1 4.1 0 0 0 3.82 2.85A8.22 8.22 0 0 1 2 19.54 11.6 11.6 0 0 0 8.29 21c7.55 0 11.68-6.25 11.68-11.68v-.53A8.36 8.36 0 0 0 22.46 6z"/>
+          <a
+            href="#"
+            aria-label="YouTube"
+            className="w-10 h-10 rounded-full bg-gray-900 text-white flex items-center justify-center hover:opacity-80 transition"
+          >
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M19.6 3.2H4.4A4.4 4.4 0 0 0 0 7.6v8.8a4.4 4.4 0 0 0 4.4 4.4h15.2a4.4 4.4 0 0 0 4.4-4.4V7.6a4.4 4.4 0 0 0-4.4-4.4zM9.8 15.6V8.4L15.8 12l-6 3.6z" />
             </svg>
           </a>
         </div>
 
-        {/* copyright */}
-        <div className="text-sm text-gray-600">
-          <span>© 2025 designed by </span>
-          <span className="text-pink-500">Issaaf Kattan</span>
-        </div>
+        {/* Copyright */}
+        <p className="text-sm text-gray-600">
+          © {new Date().getFullYear()} GuruvAidhyam Ayurveda — Handcrafted
+          Natural Skincare
+        </p>
       </div>
     </footer>
   );

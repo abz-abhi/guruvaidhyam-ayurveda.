@@ -4,7 +4,7 @@ import Features from "@/components/features";
 import Pricing from "@/components/pricing";
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-white ">
       <Hero />
       <ProductPage />
       <Features />
