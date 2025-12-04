@@ -44,3 +44,7 @@ body {
 .text-pink-500 { color: var(--pink); }
 .bg-pink-500 { background-color: var(--pink); }
 .hover\:text-gray-900:hover { color: #111827; }
+
+html {
+  scroll-behavior: smooth;
+}

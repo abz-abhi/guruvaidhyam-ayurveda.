@@ -31,8 +31,8 @@ export default function Header() {
             <a href="#product" className="hover:text-gray-900">Product</a>
             <a href="#features" className="hover:text-gray-900">Features</a>
             <a href="#pricing" className="hover:text-gray-900">Pricing</a>
-            <a href="#about" className="hover:text-gray-900">About</a>
-            <a href="#cta" className="text-pink-500 font-semibold">Call to action</a>
+            <a href="#footer" className="hover:text-gray-900">About</a>
+            <a href="#footer" className="text-pink-500 font-semibold">Call to action</a>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -59,8 +59,8 @@ export default function Header() {
             <a href="#product" className="py-2 px-3 rounded hover:bg-gray-50">Product</a>
             <a href="#features" className="py-2 px-3 rounded hover:bg-gray-50">Features</a>
             <a href="#pricing" className="py-2 px-3 rounded hover:bg-gray-50">Pricing</a>
-            <a href="#about" className="py-2 px-3 rounded hover:bg-gray-50">About</a>
-            <a href="#cta" className="py-2 px-3 rounded text-pink-500 hover:bg-pink-50">Call to action</a>
+            <a href="#footer" className="py-2 px-3 rounded hover:bg-gray-50">About</a>
+            <a href="#footer" className="py-2 px-3 rounded text-pink-500 hover:bg-pink-50">Call to action</a>
           </div>
         )}
       </div>

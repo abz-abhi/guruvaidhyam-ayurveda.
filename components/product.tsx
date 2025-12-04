@@ -3,7 +3,7 @@ import React from "react";
 
 const ProductPage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-white text-gray-800 mt-20">
+    <div id="product" className="min-h-screen bg-white text-gray-800 mt-20">
       <main className="max-w-7xl mx-auto px-6 md:px-8 lg:px-16 py-20">
         {/* Centered Headline */}
         <header className="text-center mb-20">

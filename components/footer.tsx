@@ -2,7 +2,10 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-white text-gray-800 py-12 border-t border-gray-100">
+    <footer
+      id="footer"
+      className="w-full bg-white text-gray-800 py-12 border-t border-gray-100"
+    >
       <div className="max-w-6xl mx-auto text-center">
         {/* Brand Logo */}
         <div className="mb-6">
@@ -29,20 +32,11 @@ export default function Footer() {
           , we bring you pure, herbal beauty with a divine touch.
         </p>
 
-        {/* Navigation */}
-        <nav className="mb-8">
-          <ul className="flex justify-center gap-10 text-sm text-gray-700">
-            <li className="hover:text-pink-500 cursor-pointer">Home</li>
-            <li className="hover:text-pink-500 cursor-pointer">Products</li>
-            <li className="hover:text-pink-500 cursor-pointer">About Us</li>
-            <li className="hover:text-pink-500 cursor-pointer">Contact</li>
-          </ul>
-        </nav>
-
         {/* Social Icons */}
         <div className="flex justify-center gap-6 mb-8">
+          {/* Instagram */}
           <a
-            href="#"
+            href="https://www.instagram.com/guruvaidhyam_ayurveda/"
             aria-label="Instagram"
             className="w-10 h-10 rounded-full bg-gray-900 text-white flex items-center justify-center hover:opacity-80 transition"
           >
@@ -51,6 +45,7 @@ export default function Footer() {
             </svg>
           </a>
 
+          {/* WhatsApp */}
           <a
             href="#"
             aria-label="WhatsApp"
@@ -61,6 +56,7 @@ export default function Footer() {
             </svg>
           </a>
 
+          {/* YouTube */}
           <a
             href="#"
             aria-label="YouTube"
@@ -68,6 +64,17 @@ export default function Footer() {
           >
             <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
               <path d="M19.6 3.2H4.4A4.4 4.4 0 0 0 0 7.6v8.8a4.4 4.4 0 0 0 4.4 4.4h15.2a4.4 4.4 0 0 0 4.4-4.4V7.6a4.4 4.4 0 0 0-4.4-4.4zM9.8 15.6V8.4L15.8 12l-6 3.6z" />
+            </svg>
+          </a>
+
+          {/* Facebook (Added) */}
+          <a
+            href="facebook.com/people/Guru-Vaidhyam/pfbid0HqUA8Ux65GSuxsfcWaF6EpVoY1vuftD1SL43VYvqdeBsN3phttps://www.facebook.com/people/Guru-Vaidhyam/pfbid0HqUA8Ux65GSuxsfcWaF6EpVoY1vuftD1SL43VYvqdeBsN3pMM5USE2NXXKXyCvUEl/?ref=pl_edit_ig_profile_acMM5USE2NXXKXyCvUEl/?ref=pl_edit_ig_profile_ac"
+            aria-label="Facebook"
+            className="w-10 h-10 rounded-full bg-gray-900 text-white flex items-center justify-center hover:opacity-80 transition"
+          >
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2V12h2.3l-.4 3h-1.9v7A10 10 0 0 0 22 12z" />
             </svg>
           </a>
         </div>
