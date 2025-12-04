@@ -7,7 +7,7 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="w-full bg-white shadow-sm">
+    <header className="w-full bg-white shadow-sm fixed">
       <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-16">
         <div className="flex items-center justify-between h-20">
 
