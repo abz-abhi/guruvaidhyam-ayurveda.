@@ -1,4 +1,4 @@
-// ProductPage.tsx
+import Image from "next/image";
 import React from "react";
 
 const ProductPage: React.FC = () => {
@@ -8,35 +8,54 @@ const ProductPage: React.FC = () => {
         {/* Centered Headline */}
         <header className="text-center mb-20">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900">
-            React <span className="text-pink-500">landing</span> page <span className="text-pink-500">2021</span>
+            React <span className="text-pink-500">landing</span> page{" "}
+            <span className="text-pink-500">2021</span>
           </h1>
           <div className="w-36 h-1 bg-pink-200 rounded mt-4 mx-auto"></div>
         </header>
 
-        {/* Feature Row 1: text left, image right */}
+        {/* Feature Row 1 */}
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-32">
           <div className="order-2 lg:order-1">
-            <h2 className="text-xl font-bold text-gray-900 mb-4">A plug n play template</h2>
+            <h2 className="text-xl font-bold text-gray-900 mb-4">
+              A plug n play template
+            </h2>
             <p className="text-gray-500 max-w-xl leading-relaxed">
-              Just edit the config.json file with details about your company and voila your beautiful state of the art landing page is ready to go live! Remember to also update your assets, add any images you want to show to /assets/images and link them in the config.json.
+              Just edit the config.json file with details about your company and
+              voila! Your beautiful landing page is ready to go live!
             </p>
           </div>
 
           <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
-            <img src="/images/featre1.jpg" alt="feature" className="w-64 rounded-lg md:w-80 lg:w-96 object-contain" />
+            <Image
+              src="/images/featre1.jpg"
+              alt="feature 1"
+              width={400}
+              height={400}
+              className="rounded-lg object-contain"
+            />
           </div>
         </section>
 
-        {/* Feature Row 2: image left, text right */}
+        {/* Feature Row 2 */}
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="flex justify-center lg:justify-start">
-            <img src="/images/feature2.jpg" alt="feature" className="w-64 rounded-lg md:w-80 lg:w-96 object-contain" />
+            <Image
+              src="/images/feature2.jpg"
+              alt="feature 2"
+              width={400}
+              height={400}
+              className="rounded-lg object-contain"
+            />
           </div>
 
           <div>
-            <h2 className="text-xl font-bold text-gray-900 mb-4">Make it your own!</h2>
+            <h2 className="text-xl font-bold text-gray-900 mb-4">
+              Make it your own!
+            </h2>
             <p className="text-gray-500 max-w-xl leading-relaxed mb-6">
-              Play around with the theme file and configure the color palette to match the branding of your company! If you're feeling wild, maybe change some tailwind css as well.
+              Play around with the theme file and configure the color palette to
+              match your branding! Change images, text, and layout easily.
             </p>
 
             <div className="space-y-4">

@@ -1,7 +1,10 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
-    <section className="max-w-7xl mx-auto px-6 md:px-8 lg:px-16 py-20 ">
+    <section className="max-w-7xl mx-auto px-6 md:px-8 lg:px-16 py-20">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        {/* Left Text Section */}
         <div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight">
             Use me as your
@@ -31,12 +34,16 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="flex justify-center lg:justify-end ">
-          <div className="w-full max-w-md lg:max-w-lg  overflow-hidden shadow-md">
-            <img
+        {/* Right Image */}
+        <div className="flex justify-center lg:justify-end">
+          <div className="w-full max-w-md lg:max-w-lg overflow-hidden shadow-md rounded-xl">
+            <Image
               src="/images/3d-delicious-food-tet-vietnamese-new-year.jpg"
               alt="hero"
+              width={600}
+              height={600}
               className="w-full h-auto object-cover"
+              priority
             />
           </div>
         </div>
